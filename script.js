@@ -1,14 +1,30 @@
 const wrapper = document.querySelector('.wrapper');
 const registerLink = document.querySelector('.register-link');
-const loginLink = document.querySelector('.login-link');
+const passwordLink = document.querySelector('.password-link');
 const btnPopup = document.querySelector('.btnLogin-popup');
 const iconClose = document.querySelector('.icon-close');
+const loginLink = document.getElementById('link-access');
 
-registerLink.onclick = () => {
-    wrapper.classList.add('active');
+loginLink.onclick = (event) => {
+    event.preventDefault();
+    wrapper.classList.remove('active-register', 'active-password');
 };
 
 loginLink.onclick = () => {
+    console.log("Accediendo...");
+    wrapper.classList.remove('active-register');
+    wrapper.classList.remove('active-password');
+};
+
+registerLink.onclick = () => {
+    wrapper.classList.add('active-register');
+    wrapper.classList.remove('active-password');
+    wrapper.classList.remove('active'); 
+};
+
+passwordLink.onclick = () => {
+    wrapper.classList.add('active-password');
+    wrapper.classList.remove('active-register');
     wrapper.classList.remove('active');
 };
 
@@ -18,5 +34,4 @@ btnPopup.onclick = () => {
 
 iconClose.onclick = () => {
     wrapper.classList.remove('active-popup');
-    wrapper.classList.remove('active');
-}
+};

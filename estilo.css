@@ -111,19 +111,35 @@
     width: 100%;
 }
 
-.wrapper .form-box.login {
+.wrapper .login-form {
+    display: block; 
+}
+
+.wrapper .register-form,
+.wrapper .password-form {
+    display: none;
+}
+.wrapper.active-register .register-form {
     display: block;
 }
-.wrapper.active .form-box.login {
+
+.wrapper.active-register .login-form,
+.wrapper.active-register .password-form {
     display: none;
 }
 
-.wrapper .form-box.register {
+.wrapper.active-password .password-form {
+    display: block;
+}
+
+.wrapper.active-password .login-form,
+.wrapper.active-password .register-form {
     display: none;
 }
 
-.wrapper.active .form-box.register {
-    display: block;
+.wrapper.active-popup {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .logreg-box .logreg-title {

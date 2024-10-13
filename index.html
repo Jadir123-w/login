@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website With Login And Register | Codehal</title>
+    <title>Website With Login And Register</title>
     <link rel="stylesheet" href="estilo.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -23,105 +23,122 @@
     </header>
 
     <section class="section">
-        <div class="wrapper">
+        <div class="wrapper"> 
             <span class="span icon-close">
-                <i class='bx bx-x-circle' ></i>
+                <i class='bx bx-x-circle'></i>
             </span>
-
+            
             <div class="logreg-box">
-                <div class="form-box login">
+                <div class="login-form">
                     <div class="logreg-title">
                         <h2>Acceso</h2>
-                        <p>Por favor inicia session para usar la plataforma</p>
+                        <p>Por favor inicia sesión para usar la plataforma</p>
                     </div>
-
+        
                     <form action="#">
                         <div class="input-box">
-                            <span class="icon"><i class='bx 
-                            bxs-envelope'></i></span>
+                            <span class="icon"><i class='bx bxs-envelope'></i></span>
                             <input type="email" required>
                             <label>Correo</label>
                         </div>
-
+        
                         <div class="input-box">
-                            <span class="icon"><i class='bx 
-                            bxs-lock'></i></span>
+                            <span class="icon"><i class='bx bxs-lock'></i></span>
                             <input type="password" required>
                             <label>Contraseña</label>
                         </div>
-
+        
                         <div class="remember-forgot">
-                            <label><input type="checkbox">
-                            Recuerdame</label>
-                            <a href="#">¿Olvido la contraseña?</a>
+                            <label><input type="checkbox"> Recuérdame</label>
+                            <a href="#" class="password-link">¿Olvidó la contraseña?</a>
                         </div>
-
+        
                         <button type="submit" class="btn">Acceso</button>
-
+        
                         <div class="logreg-link">
-                            <p>¿No tienes una cuenta?<a
-                            href="#" 
-                            class="register-link"> Registrarse</a>
-                            </p>
+                            <p>¿No tienes una cuenta?<a href="#" class="register-link"> Registrarse</a></p>
                         </div>
                     </form>
                 </div>
-
-                <div class="form-box register">
+                <div class="register-form">
                     <div class="logreg-title">
-                        <h2>Registrate</h2>
+                        <h2>Regístrate</h2>
                         <p>Por favor siga los pasos para verificar su identidad</p>
                     </div>
-
+        
                     <form action="#">
-
                         <div class="input-box">
-                            <span class="icon"><i class='bx 
-                            bx-user' ></i></span>
-                            <input type="email" required>
+                            <span class="icon"><i class='bx bx-user'></i></span>
+                            <input type="text" required>
                             <label>Nombres</label>
                         </div>
-
+        
                         <div class="input-box">
-                            <span class="icon"><i class='bx 
-                            bxs-envelope'></i></span>
+                            <span class="icon"><i class='bx bxs-envelope'></i></span>
                             <input type="email" required>
                             <label>Correo</label>
                         </div>
-
+        
                         <div class="input-box">
-                            <span class="icon"><i class='bx 
-                            bxs-lock'></i></span>
+                            <span class="icon"><i class='bx bxs-lock'></i></span>
                             <input type="password" required>
                             <label>Contraseña</label>
                         </div>
-
+        
                         <div class="remember-forgot">
-                            <label><input type="checkbox">
-                            De acuerdo con los terminos y condiciones
-                            </label>
+                            <label><input type="checkbox"> De acuerdo con los términos y condiciones</label>
                         </div>
-
-                        <button type="submit" 
-                        class="btn">Registrarse</button>
-
+        
+                        <button type="submit" class="btn">Registrarse</button>
+        
                         <div class="logreg-link">
-                            <p>¿Ya tienes una cuenta?<a
-                            href="#" class="login-link"> Acceder</a>
-                            </p>
+                            <p>¿Ya tienes una cuenta?<a href="#" class="login-link" id="link-access">Acceder</a></p>
+                        </div>                        
+                    </form>
+                </div>
+        
+                <div class="password-form">
+                    <div class="logreg-title">
+                        <h2>Nueva contraseña</h2>
+                        <p>Por favor escribe tu nueva contraseña</p>
+                    </div>
+        
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="password" required>
+                            <label>Nueva contraseña</label>
                         </div>
+        
+                        <div class="input-box">
+                            <input type="password" required>
+                            <label>Repite la nueva contraseña</label>
+                        </div>
+        
+                        <div class="remember-forgot">
+                            <label><input type="checkbox"> Recuérdame</label>
+                        </div>
+        
+                        <button type="submit" class="btn">Cambiar contraseña</button>
+        
+                        <div class="logreg-link">
+                            <p>¿Ya tienes una cuenta?<a href="#" class="login-link" id="link-access">Acceder</a></p>
+                        </div>                        
                     </form>
                 </div>
             </div>
-
+        
             <div class="media-options">
                 <a href="#">
                     <i class='bx bxl-google'></i>
                     <span>Acceso a Google</span>
                 </a>
                 <a href="#">
-                    <i class='bx bxl-facebook-square' ></i>
-                    <span>Acceso a Facebook</span>º
+                    <i class='bx bxl-facebook-square'></i>
+                    <span>Acceso a Facebook</span>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-github'></i>
+                    <span>Acceso a Github</span>
                 </a>
             </div>
         </div>
