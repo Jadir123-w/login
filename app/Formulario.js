@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const userCredentials = await createUserWithEmailAndPassword(auth, email, password);
             console.log("Usuario creado:", userCredentials);
-            // Aquí puedes agregar más lógica, como redirigir al usuario a otra página
         } catch (error) {
             console.log("Error al crear el usuario:", error);
         }
