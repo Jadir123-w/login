@@ -12,24 +12,23 @@
 <body>
     <header class="header">
         <a href="#" class="logo">Logo</a>
-
         <nav class="navbar">
             <a href="#">Casa</a>
             <a href="#">Acerca</a>
             <a href="#">Servicios</a>
             <a href="#">Contacto</a>
-            <button class="btnLogin-popup">Acceso</button>
+            <button id="btnLogin-popup" class="btnLogin-popup">Acceso</button>
         </nav>
     </header>
 
     <section class="section">
-        <div class="wrapper"> 
-            <span class="span icon-close">
+        <div id="wrapper" class="wrapper"> 
+            <span id="icon-close" class="span icon-close">
                 <i class='bx bx-x-circle'></i>
             </span>
             
             <div class="logreg-box">
-                <div class="login-form">
+                <div id="login-form" class="login-form">
                     <div class="logreg-title">
                         <h2>Acceso</h2>
                         <p>Por favor inicia sesión para usar la plataforma</p>
@@ -38,66 +37,67 @@
                     <form action="#">
                         <div class="input-box">
                             <span class="icon"><i class='bx bxs-envelope'></i></span>
-                            <input type="email" required>
+                            <input type="email" id="login-email" required>
                             <label>Correo</label>
                         </div>
         
                         <div class="input-box">
                             <span class="icon"><i class='bx bxs-lock'></i></span>
-                            <input type="password" required>
+                            <input type="password" id="login-password" required>
                             <label>Contraseña</label>
                         </div>
         
                         <div class="remember-forgot">
                             <label><input type="checkbox"> Recuérdame</label>
-                            <a href="#" class="password-link">¿Olvidó la contraseña?</a>
+                            <a href="#" id="password-link" class="password-link">¿Olvidó la contraseña?</a>
                         </div>
         
                         <button type="submit" class="btn">Acceso</button>
         
                         <div class="logreg-link">
-                            <p>¿No tienes una cuenta?<a href="#" class="register-link"> Registrarse</a></p>
+                            <p>¿No tienes una cuenta?<a href="#" id="register-link" class="register-link"> Registrarse</a></p>
                         </div>
                     </form>
                 </div>
-                <div class="register-form">
+
+                <div id="register-form" class="register-form" style="display: none;">
                     <div class="logreg-title">
                         <h2>Regístrate</h2>
                         <p>Por favor siga los pasos para verificar su identidad</p>
                     </div>
         
-                    <form action="#">
+                    <form id="register-form" action="#">
                         <div class="input-box">
                             <span class="icon"><i class='bx bx-user'></i></span>
-                            <input type="text" required>
+                            <input type="text" name="regis-name" id="regis-name" required>
                             <label>Nombres</label>
                         </div>
-        
+                    
                         <div class="input-box">
                             <span class="icon"><i class='bx bxs-envelope'></i></span>
-                            <input type="email" required>
+                            <input type="email" name="regis-email" id="regis-email" required>
                             <label>Correo</label>
                         </div>
-        
+                    
                         <div class="input-box">
                             <span class="icon"><i class='bx bxs-lock'></i></span>
-                            <input type="password" required>
+                            <input type="password" name="regis-password" id="regis-password" required>
                             <label>Contraseña</label>
                         </div>
-        
+                    
                         <div class="remember-forgot">
                             <label><input type="checkbox"> De acuerdo con los términos y condiciones</label>
                         </div>
-        
+                    
                         <button type="submit" class="btn">Registrarse</button>
-        
+                    
                         <div class="logreg-link">
-                            <p>¿Ya tienes una cuenta?<a href="#" class="login-link" id="link-access">Acceder</a></p>
-                        </div>                        
-                    </form>
+                            <p>¿Ya tienes una cuenta?<a href="#" id="login-link-register" class="login-link">Acceder</a></p>
+                        </div>
+                    </form>                    
                 </div>
-        
-                <div class="password-form">
+
+                <div id="password-form" class="password-form" style="display: none;">
                     <div class="logreg-title">
                         <h2>Nueva contraseña</h2>
                         <p>Por favor escribe tu nueva contraseña</p>
@@ -114,37 +114,34 @@
                             <label>Repite la nueva contraseña</label>
                         </div>
         
-                        <div class="remember-forgot">
-                            <label><input type="checkbox"> Recuérdame</label>
-                        </div>
-        
                         <button type="submit" class="btn">Cambiar contraseña</button>
         
                         <div class="logreg-link">
-                            <p>¿Ya tienes una cuenta?<a href="#" class="login-link" id="link-access">Acceder</a></p>
+                            <p>¿Ya tienes una cuenta?<a href="#" id="login-link-password" class="login-link">Acceder</a></p>
                         </div>                        
                     </form>
                 </div>
-            </div>
-        
-            <div class="media-options">
-                <a href="#">
-                    <i class='bx bxl-google'></i>
-                    <span>Acceso a Google</span>
-                </a>
-                <a href="#">
-                    <i class='bx bxl-facebook-square'></i>
-                    <span>Acceso a Facebook</span>
-                </a>
-                <a href="#">
-                    <i class='bx bxl-github'></i>
-                    <span>Acceso a Github</span>
-                </a>
+
+                <div class="media-options">
+                    <button id="googlebtn">
+                        <i class='bx bxl-google'></i>
+                        <span>Acceso a Google</span>
+                    </button>
+                    <button id="facebookbtn">
+                        <i class='bx bxl-facebook-square'></i>
+                        <span>Acceso a Facebook</span>
+                    </button>
+                    <button id="githubbtn">
+                        <i class='bx bxl-github'></i>
+                        <span>Acceso a Github</span>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
+    <script src="app/Formulario.js" type="module"></script>
+    
 </body>
-
 </html>
